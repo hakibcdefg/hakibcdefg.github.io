@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            background-color: black;
+            color: white;
+            height: 10vh;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .menu ul li {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .menu ul li:hover {
+            color: lightskyblue
+        }
+
+        .button {
+            display: flex;
+            gap: 3px;
+        }
+
+        .login button {
+            padding: 0.5rem 1rem;
+            background-color: blue;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login button:hover {
+            background-color: lightskyblue;
+        }
+
+        .register button {
+            padding: 0.5rem 1rem;
+            background-color: blue;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .register button:hover {
+            background-color: lightskyblue;
+        }
+
+        .welcome{
+            margin-top: 10vh;
+            width: 100%;
+            padding: 60px;
+            justify-content: space-between;
+            background-color: lightskyblue;
+            border: 2px;
+            text-align: justify;
+        }
+
+        .click{
+            padding: 0.5rem 1rem;
+            background-color: blue;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .click:hover {
+            background-color: black;
+        }
+
+        .artikel-utama {
+            display: flex;
+            gap: 80px;
+        }
+
+        .article {
+            width: 80%;
+            margin: 20px auto;
+            gap: 50px;
+        }
+
+        .article1 {
+            margin-left: 60px;
+            width: 60%;
+            flex: 3;
+            text-align: justify;
+        }
+
+        .article h2 {
+            margin-bottom: 20px;
+        }
+
+        .article-list {
+            margin-right: 60px;
+            width: 60%;
+            flex: 1;
+        }
+        
+        .gambar {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .gambar img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <div class="navigasi">
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+            
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        
+            <div class="button">
+                <div class="login">
+                    <a href="login.html" style="text-decoration: none;" target="_blank">
+                        <button>Login</button>
+                    </a>
+                </div>
+
+                <div class="register">
+                    <button>Register</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!-- Content -->
+    <main>
+       <div class="welcome">
+            <h1>Selamat Datang di Website</h1><br>
+            <p>Website ini merupakan hasil karya yang dikembangkan oleh Hakib Priyatno sebagai sarana latihan dalam memperdalam keterampilannya di bidang coding, khususnya untuk mengasah kemampuan dalam merancang, membangun, dan mengimplementasikan berbagai fitur pemrograman web.</p><br>
+            <button class="click">Click me</button>
+       </div><br>
+
+       <article>
+        <div class="artikel-utama">
+            <div class="article1">
+                <h2>Full Stack Developer</h2><br>
+                <p>Seorang Full Stack Developer adalah pengembang perangkat lunak yang memiliki kemampuan untuk menangani seluruh aspek pengembangan aplikasi, baik pada sisi klien (front-end) maupun server (back-end). Mereka menguasai berbagai bahasa pemrograman dan teknologi seperti HTML, CSS, JavaScript untuk front-end, serta Node.js, Python, PHP, atau Java untuk back-end. Selain itu, mereka juga memahami penggunaan basis data seperti MySQL, MongoDB, atau PostgreSQL. Dengan kemampuan lintas bidang ini, seorang Full Stack Developer dapat membangun aplikasi web atau mobile dari awal hingga siap digunakan.</p><br>
+                <p>Peran Full Stack Developer sangat penting dalam pengembangan perangkat lunak modern karena fleksibilitas dan efisiensinya. Dalam tim kecil atau startup, seorang Full Stack Developer dapat mengisi banyak peran teknis sekaligus, sehingga menghemat sumber daya dan mempercepat proses pengembangan. Sementara dalam perusahaan besar, mereka sering berperan sebagai penghubung antara tim front-end dan back-end, membantu menyatukan arsitektur aplikasi secara holistik. Kemampuan mereka untuk melihat keseluruhan sistem menjadikan mereka aset yang sangat berharga dalam proyek-proyek kompleks.</p>
+
+                <div class="gambar">
+                    <img src="./image/Coding.jpg" alt="">
+                    <p><strong>Gambar 1.</strong> Ilustrasi Coding</p>
+                </div>
+
+                <p>Untuk menjadi Full Stack Developer, seseorang perlu memiliki dasar yang kuat dalam logika pemrograman dan algoritma, serta terus memperbarui pengetahuannya terhadap teknologi terbaru. Perkembangan pesat dalam dunia teknologi menuntut mereka untuk selalu belajar, baik melalui kursus daring, dokumentasi resmi, maupun pengalaman langsung dalam mengerjakan proyek. Di samping keterampilan teknis, kemampuan komunikasi dan kolaborasi juga sangat dibutuhkan, karena mereka sering bekerja dalam tim multidisiplin dan harus mampu menjelaskan konsep teknis kepada anggota tim non-teknis.</p><br>
+                <p>Secara umum, profesi Full Stack Developer menawarkan peluang karier yang luas dan tantangan yang menarik. Dengan meningkatnya permintaan akan aplikasi digital di berbagai sektor, kebutuhan akan tenaga ahli yang mampu menangani berbagai lapisan teknologi terus meningkat. Baik bekerja sebagai freelancer, anggota tim pengembang, maupun membangun produk sendiri, Full Stack Developer memiliki ruang yang luas untuk berkembang dan berinovasi dalam ekosistem teknologi yang dinamis ini.</p><br><br>
+            </div>
+            <div class="article-list">
+                <h3>Daftar Artikel</h3><br>
+                <ul class="list-article" style="list-style: none;">
+                    <strong><li>Artikel 1</li></strong>
+                        <p>Lorem ipsum, dolor sit amet consectetur.....</p><br>
+                    <strong><li>Artikel 2</li></strong>
+                        <p>Lorem ipsum, dolor sit amet consectetur.....</p><br>
+                    <strong><li>Artikel 3</li></strong>
+                        <p>Lorem ipsum, dolor sit amet consectetur.....</p>
+                </ul>
+            </div>
+        </div>
+       </article>
+</body>
+</html>
