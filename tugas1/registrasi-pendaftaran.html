@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Pendaftaran</title>
+    <style>
+        td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea,
+        input[type="date"] {
+            width: 200px;
+        }
+  </style>
+</head>
+<body>
+
+  <h1><strong>CONTOH FORM</strong></h1>
+
+  <form>
+    <table>
+      <tr>
+        <td>Nama:</td>
+        <td><input type="text" name="nama"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin:</td>
+        <td>
+          <input type="radio" name="jk" value="pria"> Pria
+          <input type="radio" name="jk" value="wanita"> Wanita
+        </td>
+      </tr>
+      <tr>
+        <td>Hobi:</td>
+        <td>
+          <input type="checkbox" name="hobi" value="menyanyi"> Menyanyi
+          <input type="checkbox" name="hobi" value="menggambar"> Menggambar
+          <input type="checkbox" name="hobi" value="menari"> Menari
+        </td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir:</td>
+        <td><input type="date" name="tgl_lahir"></td>
+      </tr>
+      <tr>
+        <td>Asal Kota:</td>
+        <td>
+          <select name="kota">
+            <option>---PILIH---</option>
+            <option>Makassar</option>
+            <option>Parepare</option>
+            <option>Palopo</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Alamat:</td>
+        <td><textarea name="alamat" rows="3" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Simpan</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
